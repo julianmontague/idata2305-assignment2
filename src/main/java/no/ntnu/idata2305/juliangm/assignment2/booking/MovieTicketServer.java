@@ -15,7 +15,7 @@ public class MovieTicketServer {
             System.out.println("Hi," + customerName + " : Seats not available for " + movieName);
         } else {
             availableSeats = availableSeats - numberOfSeats;
+            System.out.println("Hi," + customerName + " : " + numberOfSeats + " Seats booked successfully for" + movieName);
         }
-        System.out.println("Hi," + customerName + " : " + numberOfSeats + " Seats booked successfully for" + movieName);
     }
 }
