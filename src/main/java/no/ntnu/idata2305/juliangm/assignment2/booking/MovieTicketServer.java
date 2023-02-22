@@ -1,11 +1,11 @@
 package no.ntnu.idata2305.juliangm.assignment2.booking;
 public class MovieTicketServer {
-    // TBD
-
     String movieName;
     int availableSeats;
-    public MovieTicketServer() {
-        // TBD
+
+    public MovieTicketServer(String name, int seats) {
+        this.movieName = name;
+        this.availableSeats = seats;
     }
 
     public void bookTicket(String customerName, int numberOfSeats) {
