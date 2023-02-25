@@ -8,7 +8,7 @@ public class MovieTicketServer {
         this.availableSeats = seats;
     }
 
-    public void bookTicket(String customerName, int numberOfSeats) {
+    public synchronized void bookTicket(String customerName, int numberOfSeats) {
         System.out.println("Hi," + customerName + " : " + availableSeats + " : Seats available for " + movieName);
 
         if ((availableSeats - numberOfSeats) < 0) {
