@@ -1,5 +1,9 @@
 # Assignment 2
 
+## Running the code
+
+With the root folder of this git repository open in the terminal, execute `mvn verify`. Then navigate to the classes directory with `cd target/classes` and run `java no.ntnu.idata2305.juliangm.assignment2.Main`.
+
 ## Observations
 
 ### Before synchronization
