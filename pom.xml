@@ -8,6 +8,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>no.ntnu.idata2305.juliangm.assignment2.Assignment2</exec.mainClass>
+        <exec.mainClass>no.ntnu.idata2305.juliangm.assignment2.Main</exec.mainClass>
     </properties>
 </project>

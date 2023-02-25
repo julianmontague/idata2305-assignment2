@@ -1,9 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package no.ntnu.idata2305.juliangm.assignment2;
+
+import no.ntnu.idata2305.juliangm.assignment2.booking.MovieTicketClient;
+import no.ntnu.idata2305.juliangm.assignment2.booking.MovieTicketServer;
 
 /**
  *
@@ -12,6 +10,16 @@ package no.ntnu.idata2305.juliangm.assignment2;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        MovieTicketServer server = new MovieTicketServer("The Banshees of Inisherin", 10);
+
+        Thread t1 = new MovieTicketClient("Haseeb", 2, server);
+        Thread t2 = new MovieTicketClient("Sora", 3, server);
+        Thread t3 = new MovieTicketClient("Patrick", 5, server);
+        Thread t4 = new MovieTicketClient("Andrea", 2, server);
+
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
     }
 }
